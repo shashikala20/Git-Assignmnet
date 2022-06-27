@@ -1,0 +1,661 @@
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment
+$ git init
+Initialized empty Git repository in C:/Users/SHASGAIK/Desktop/Assignment/.git/
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ touch README.txt
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git commit -m "readme.txt commited"
+[master (root-commit) 2c9312c] readme.txt commited
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git branch html-assiginments
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git checkout html-assiginments
+Switched to branch 'html-assiginments'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ touch file.txt
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ touch index.html
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ touch file.html
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ git commit -m "after branch created"
+[html-assiginments fcfc9fd] after branch created
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.html
+ create mode 100644 index.html
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ git commit -m "after branch created"
+On branch html-assiginments
+nothing to commit, working tree clean
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ code .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ git commit -m "readme.txt commited"
+[html-assiginments 34481b3] readme.txt commited
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ git checkout master
+Switched to branch 'master'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ add .
+bash: add: command not found
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git commit -m "readme.txt commited"
+[master 3004cf1] readme.txt commited
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git checkout html-assiginments
+Switched to branch 'html-assiginments'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ git commit -m "minior changes"
+[html-assiginments b16ad1f] minior changes
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (html-assiginments)
+$ git checkout master
+Switched to branch 'master'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git merge html-assiginments
+Merge made by the 'ort' strategy.
+ file.html  | 2 ++
+ index.html | 2 ++
+ 2 files changed, 4 insertions(+)
+ create mode 100644 file.html
+ create mode 100644 index.html
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git branch --delete html-assiginments
+Deleted branch html-assiginments (was b16ad1f).
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git branch css-assignments
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ touch style.css
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ touch style1.css
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git commit -m "Css Commit"
+[css-assignments 1bf33e2] Css Commit
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 style.css
+ create mode 100644 style1.css
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ touch readme.txt
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git commit -m " readme Css Commit"
+On branch css-assignments
+nothing to commit, working tree clean
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git commit -m " readme Css Commit"
+[css-assignments 9e52ad6]  readme Css Commit
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git commit -m " readme  my name Css Commit"
+[master f1a1023]  readme  my name Css Commit
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git checkout css-assignmnet
+error: pathspec 'css-assignmnet' did not match any file(s) known to git
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git checkout css-assignmnets
+error: pathspec 'css-assignmnets' did not match any file(s) known to git
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git commit -m " readme  my name Css Commit"
+[css-assignments 5307e93]  readme  my name Css Commit
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 6 insertions(+), 4 deletions(-)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git merge css-assignments
+Already up to date.
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git log
+commit f1a1023a135296d19e1e889bc2ec2d5562737b96 (HEAD -> master)
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:48:40 2022 +0530
+
+     readme  my name Css Commit
+
+commit 207ca499415c9bb3be7f6e868a8c4b35a640818c
+Merge: 3004cf1 b16ad1f
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:39:46 2022 +0530
+
+    Merge branch 'html-assiginments'
+
+commit b16ad1f236aaaff1286c6c031bc5e1909121f909
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:38:30 2022 +0530
+
+    minior changes
+
+commit 3004cf1efc241674a2bbb20fbdb0550eee6c152d
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:36:18 2022 +0530
+
+    readme.txt commited
+
+commit 34481b308562c7985e818bb7b084c0d4fa5f5e81
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:34:21 2022 +0530
+
+    readme.txt commited
+
+commit fcfc9fd1c21115467dfce7f545388bcce10b0d0d
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:26:42 2022 +0530
+
+    after branch created
+
+commit 2c9312c37457c1142c3ee354b9017e0751eddd64
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:19:26 2022 +0530
+
+    readme.txt commited
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git branch -d css-assignments
+error: The branch 'css-assignments' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D css-assignments'.
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git log
+commit 5307e935fa8f3630133f42ffb5bea4394b476df5 (HEAD -> css-assignments)
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:53:00 2022 +0530
+
+     readme  my name Css Commit
+
+commit 9e52ad66b1a946efa131c255ce950a2f5abcb452
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:47:23 2022 +0530
+
+     readme Css Commit
+
+commit 1bf33e203a7326e3eff3a85380f93b6e847a6281
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:44:22 2022 +0530
+
+    Css Commit
+
+commit 207ca499415c9bb3be7f6e868a8c4b35a640818c
+Merge: 3004cf1 b16ad1f
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:39:46 2022 +0530
+
+    Merge branch 'html-assiginments'
+
+commit b16ad1f236aaaff1286c6c031bc5e1909121f909
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:38:30 2022 +0530
+
+    minior changes
+
+commit 3004cf1efc241674a2bbb20fbdb0550eee6c152d
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:36:18 2022 +0530
+
+    readme.txt commited
+
+commit 34481b308562c7985e818bb7b084c0d4fa5f5e81
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:34:21 2022 +0530
+
+    readme.txt commited
+
+commit fcfc9fd1c21115467dfce7f545388bcce10b0d0d
+Author: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Date:   Thu Jun 9 23:26:42 2022 +0530
+
+    after branch created
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git status
+On branch css-assignments
+nothing to commit, working tree clean
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git branch -d css-assignments
+error: Cannot delete branch 'css-assignments' checked out at 'C:/Users/SHASGAIK/Desktop/Assignment'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git branch --delete css-assignments
+error: Cannot delete branch 'css-assignments' checked out at 'C:/Users/SHASGAIK/Desktop/Assignment'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git merge css-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master|MERGING)
+$ git branch --delete css-assignments
+error: The branch 'css-assignments' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D css-assignments'.
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   file.html
+        modified:   index.html
+        new file:   style.css
+        new file:   style1.css
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.txt
+
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master|MERGING)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master|MERGING)
+$ git commit -m " merge Css Commit"
+[master 1a67b79]  merge Css Commit
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git branch --delete css-assignments
+Deleted branch css-assignments (was 5307e93).
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git branch js-assignments
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ touch index.js
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ touch file.js
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ touch readme.txt
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ git commit -m "JS File added"
+[js-assignments 8a312a9] JS File added
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.js
+ create mode 100644 index.js
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ git commit -m "JS File"
+[js-assignments 5ca4105] JS File
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git commit -m "file"
+[master 364e660] file
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ git commit -m "Add 123"
+[js-assignments 8d2c1ef] Add 123
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 4 insertions(+), 1 deletion(-)
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git merge js-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master|MERGING)
+$ git branch --delete js-assignments
+error: The branch 'js-assignments' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D js-assignments'.
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master|MERGING)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master|MERGING)
+$ git commit -m "Add 123 only"
+[master ddeb708] Add 123 only
+ Committer: Gaikwad <shashikala-nagnath.gaikwad@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git branch --delete js-assignments
+Deleted branch js-assignments (was 8d2c1ef).
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git add .
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git commit -m "git link copied"
+On branch master
+nothing to commit, working tree clean
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git remote add origin https://github.com/shashikala20/freshersbatch-oct16.git
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git remote
+origin
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$ git push origin master
+Enumerating objects: 51, done.
+Counting objects: 100% (51/51), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (51/51), 4.63 KiB | 948.00 KiB/s, done.
+Total 51 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/shashikala20/freshersbatch-oct16.git
+ * [new branch]      master -> master
+
+shasgaik@LIN24010533 MINGW64 ~/Desktop/Assignment (master)
+$
